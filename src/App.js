@@ -117,7 +117,7 @@ function App() {
         console.log("socket.connected", socket);
         setConnected(true);
       }
-    }, 300);
+    }, 1000);
   };
 
   const handleMessage = (e) => {
@@ -278,7 +278,6 @@ function App() {
       <div className="row">
         <div className="col-md-2 pt-3">
           {connected &&
-            users &&
             users.map((user) => (
               <div
                 key={user.userID}
