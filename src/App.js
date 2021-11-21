@@ -43,7 +43,7 @@ function App() {
       socket.off("user joined");
       socket.off("message");
     };
-  }, [users]);
+  }, []);
 
   useEffect(() => {
     socket.on("user connected", (user) => {
@@ -278,6 +278,7 @@ function App() {
       <div className="row">
         <div className="col-md-2 pt-3">
           {connected &&
+            users &&
             users.map((user) => (
               <div
                 key={user.userID}
