@@ -218,7 +218,7 @@ function App() {
           MERN-STACK REALTIME CHAT APP
         </h1>
         <br />
-        <p className="lead text-light">Public and private chat</p>
+        <p className="lead text-light">⚡ Public and private chat ⚡</p>
       </div>
       {/* <div className="row">
         <div className="d-flex justify-content-evenly pt-2 pb-1">
