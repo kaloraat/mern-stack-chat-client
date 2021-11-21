@@ -43,7 +43,7 @@ function App() {
       socket.off("user joined");
       socket.off("message");
     };
-  }, []);
+  }, [users]);
 
   useEffect(() => {
     socket.on("user connected", (user) => {
@@ -289,7 +289,7 @@ function App() {
                 }}
               >
                 {user.username.charAt(0).toUpperCase() + user.username.slice(1)}{" "}
-                {user.self && "(yourself)"}
+                {user.self && "(yourself)"}{" "}
                 {user.connected ? (
                   <span className="online-dot"></span>
                 ) : (
